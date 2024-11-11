@@ -88,7 +88,7 @@ int main()
             printf("\nThank You!!!\n");
         }
         else
-            printf("Enter a valid option\n");
+            printf("\nEnter a valid option\n");
 
     }
 }
