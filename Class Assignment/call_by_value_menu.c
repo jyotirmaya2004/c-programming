@@ -24,7 +24,7 @@ int main()
         printf("\t7.Check the number is part of Fibonacci number series or not\n");
         printf("\t8.Find multiplication of all digits of a given number\n");
         printf("\t9.Check the number is prime or not\n");
-        printf("\t10.EXIT");
+        printf("\t10.EXIT\n");
         printf("Choose any option from the above menu : ");
         scanf("%d",&o);
         if(o==1)
