@@ -29,63 +29,63 @@ int main()
         scanf("%d",&o);
         if(o==1)
             {
-                printf("Enter a number : ");
+                printf("\nEnter a number to find factorial : ");
                 scanf("%ld",&num);
                 find_fact(num);
                 printf("The factorial of  %d = %ld \n",num,find_fact(num));
             }
         else if(o==2)
             {
-                printf("Enter a number : ");
+                printf("\nEnter a number to find reverse of a number : ");
                 scanf("%d",&num);
                 find_rev(num);
                 printf("The reverse of  %d = %d \n",num,find_rev(num));
             }
         else if(o==3)
             {
-                printf("Enter a number : ");
+                printf("\nEnter a number to check palindrome or not : ");
                 scanf("%d",&num);
                 check_pali(num);
             }
         else if(o==4)
             {
-                printf("Enter a number : ");
+                printf("\nEnter a number to check Armstrong number or not : ");
                 scanf("%d",&num);
                 check_armstrong(num);
             }
         else if(o==5)
         {
-            printf("Enter a number : ");
+            printf("\nEnter a number to check perfect number or not : ");
             scanf("%d",&num);
             check_perfect(num);
         }
         else if(o==6)
         {
-            printf("Enter a number : ");
+            printf("\nEnter a number to find binary equivalent : ");
             scanf("%d",&num);
             find_binary(num);
         }
         else if(o==7)
         {
-            printf("Enter a number : ");
+            printf("\nEnter a number to check part of fibonacci number or not : ");
             scanf("%d",&num);
             part_of_fibo(num);
         }
         else if(o==8)
         {
-            printf("Enter a number : ");
+            printf("\nEnter a number to multiply all digits : ");
             scanf("%d",&num);
             mult_digit(num);
         }
         else if(o==9)
         {
-            printf("Enter a number : ");
+            printf("\nEnter a number to check prime or not : ");
             scanf("%d",&num);
             check_prime(num);
         }
         else if(o==10)
         {
-            printf("Thank You!!!\n");
+            printf("\nThank You!!!\n");
         }
         else
             printf("Enter a valid option\n");
