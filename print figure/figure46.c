@@ -2,7 +2,7 @@
 int main()
 {
     int a,i,j,k;
-    printf("enter any odd number ");
+    printf("enter any number ");
     scanf("%d",&a);
     for(i=1;i<=a;i++)
     {     
@@ -12,7 +12,7 @@ int main()
         }
         for(j=1;j<=i;j++)
         {
-            printf("* ");
+            printf("%d ",i);
         }   
         printf("\n");
     }
