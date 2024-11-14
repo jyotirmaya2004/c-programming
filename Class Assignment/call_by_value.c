@@ -60,10 +60,23 @@ void check_pali(int n)
 }
 void check_armstrong(int n)
 {
-    int rem=1,sum=0,n1=n;
+    int rem=1,n1=n,count=0;
     while(n>0){
         rem=n%10;
-        sum+=rem*rem*rem;
+        n=n/10;
+        count++;
+    }
+    int sum=0; 
+    rem=1,n=n1;
+    while(n>0){
+        rem=n%10;
+        int t=1;
+        for (int i = 0; i < count; i++)
+        {
+            t*=rem;
+        }
+        
+        sum+=t;
         n=n/10;
     }
     if(n1==sum){
