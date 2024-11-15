@@ -15,6 +15,13 @@ int main()
     {
         printf("%d ",a[i]);
     }
+    float sum=0;
+    for (int i = 0; i < n; i++)
+    {
+        sum+=a[i];
+    }
+    printf("\nThe average of array element = %.2f",sum/n);
+    
     
     
 

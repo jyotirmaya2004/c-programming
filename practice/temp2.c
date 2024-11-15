@@ -1,8 +1,9 @@
 #include<stdio.h>
-#include<math.h>
 void main()
 {
-    int n=1634;
+    int n;
+    printf("Enter any number : ");
+    scanf("%d",&n);
     int rem=1,n1=n,count=0;
     while(n>0){
         rem=n%10;
@@ -14,10 +15,11 @@ void main()
     while(n>0){
         rem=n%10;
         int t=1;
-        printf("rem= %d\n",rem);
-        printf("count=%d\n",count);
-        t=pow(rem,count);
-        printf("%d\n",t);
+        for (int i = 0; i < count; i++)
+        {
+            t*=rem;
+        }
+        
         sum+=t;
         n=n/10;
     }
