@@ -10,7 +10,7 @@ int main()
     {
         for(j=size;j>= abs(i);j--)
         {
-            printf("%d ",j);
+            printf("%d ",j+1);
 
         }
         printf("\n");
