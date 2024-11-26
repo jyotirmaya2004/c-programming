@@ -1,63 +1,64 @@
-#include<stdio.h>
-int main()
-{
-    int i,n;
-    printf("Enter array size : ");
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the size of array : ");
     scanf("%d",&n);
-    int n1=n;
-    int a[n];
-    printf("Enter element to the array : \n");
+    int arr[n],b[n];
+    int i, j, k;
+    printf("Enter element : ");
     for ( i = 0; i < n; i++)
     {
-        scanf("%d",&a[i]);
-    }
-    printf("The array : ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ",a[i]);
-    }
-    int b[n];
-    int j=0,k=0;
-    for (int i = 0; i < n; i++)
-    {
-        b[j++]=a[i];
-    }
-    j=0;
-    for (int i = 0; i < n; i++)
-    {
-        for ( j = i+1; j < n; j++)
-        {
-            if(a[i]==a[j])
-            {
-                for(k=j;k<n;k++)
-                {
-                    a[k]=a[k+1];
-                    n--;
-                    j--;
-                }
-            }
-        }
-        
-    }
-    for ( i = 0; i < n; i++)
-    {
-        printf("%d ",a[i]);
+        scanf("%d",&arr[i]);
     }
     
-    printf("\n\tELEMENT\t\tFREQUENCY");
-    i=0;
-    while(i<n)
-    {
-        int count=0;
-        for ( j = i+1; j < n1; j++)
-        {
-            if(a[i]==b[j])
-            {
-                count++;
+
+    // Print the original array
+    printf("Original array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    // for (i = 0; i < n; i++) {
+    //     b[i]=arr[i];
+    // }
+
+    printf("\n");
+
+    // Remove duplicates
+    for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) {
+            if (arr[i] == b[j]) {
+                // Shift elements to the left to remove the duplicate
+                for (k = j; k < n - 1; k++) {
+                    arr[k] = arr[k + 1];
+                }
+                n--; // Decrease the array size
+                j--; // Check the new element at index j
             }
         }
-        printf("\n\t%d\t\t%d",a[i],count+2);
-        i++;
+    }
+
+    // Print the array after removing duplicates
+    printf("Array after removing duplicates: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    // int n1=sizeof(arr)/sizeof(arr[0]);
+    // for (int i = 0; i <n1; i++)
+    // {
+    //     int count=0;
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if(arr[i]=b[j])
+    //         {
+    //             count++;
+    //         }
+    //     }
+    //     printf("$%d *%d ",arr[i],count);
         
-    } 
+    // }
+    
+    printf("\n");
+
+    return 0;
 }

@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,max;
+    int n;
     printf("Enter range of array : ");
     scanf("%d",&n);
     int a[n+1];
@@ -14,4 +14,5 @@ int main()
     {
         printf("%d ",a[i]);
     }
+    
 }

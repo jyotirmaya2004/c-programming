@@ -1,9 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int arr[] = {4, 2, 3, 4, 2, 5, 3, 6};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    printf("Enter the size of array : ");
+    scanf("%d",&n);
+    int arr[n];
     int i, j, k;
+    printf("Enter element : ");
+    for ( i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
 
     // Print the original array
     printf("Original array: ");
