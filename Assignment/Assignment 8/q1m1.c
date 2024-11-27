@@ -23,7 +23,7 @@ int main()
         sign*=-1;
         value+=sign*(pow(x,i)/fact(i));
     }
-    
+
     printf("\nvalue of series sin(%.2f) is : %.2f\n",x,value);
 
 }
