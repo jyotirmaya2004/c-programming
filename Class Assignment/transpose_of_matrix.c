@@ -26,22 +26,18 @@ int main()
         printf("\n");
         
     }
-    for (int i = 0; i < n1; i++)
-    {
-        for (int j = 0; j< n2; j++)
-        {
-            int temp=a[i][j];
-            a[i][j]=a[j][i];
-            a[j][i]=temp;
+    int b[n2][n1];
+    for (r = 0; r < n2; r++) {
+        for (c = 0; c < n1; c++) {
+            b[r][c] = a[c][r];
         }
-        
     }
     printf("\nThe matrix : \n");
     for (r=0;r<n2;r++)
     {
         for (c=0;c<n1;c++)
         {
-            printf("%d ",a[r][c]);
+            printf("%d ",b[r][c]);
         }
         printf("\n");
         
