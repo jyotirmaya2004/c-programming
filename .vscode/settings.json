@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "rec8_sum_1_to_n": "cpp"
     }
 }
