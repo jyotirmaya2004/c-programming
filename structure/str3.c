@@ -11,6 +11,7 @@ struct emp
     char depart[50];
     float bs;//bs=base salary
 };
+
 int i,j,n;
 int main()
 {
