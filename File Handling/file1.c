@@ -4,7 +4,7 @@ int main()
 {
     FILE *fileptr=NULL;
     char ch;
-    fileptr=fopen("text.txt","r");
+    fileptr=fopen("file2.c","r");
     while(1)
     {
         if((ch=fgetc(fileptr))!=EOF)

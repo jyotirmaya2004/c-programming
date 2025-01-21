@@ -12,10 +12,10 @@ int main()
         y=1;
         for(x=1;x<=dg;x++){
          y=y*x; 
-         printf("%d ",y);}
          n=n/10;
          
          sum=sum+y;
+        }
     }
     printf("%d ",sum);
     if(num==sum)
