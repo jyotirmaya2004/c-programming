@@ -6,6 +6,7 @@ int main()
     printf("Enter your name : ");
     gets(a);
     int j=0;
+    printf("The middle word of your name : \"");
     for (int i = 0; i <=strlen(a); i++)
     {
         if(a[i]!=32&&a[i]!='\0')
@@ -19,4 +20,5 @@ int main()
             j=0;
             }
     }
+    printf("\"");
 }

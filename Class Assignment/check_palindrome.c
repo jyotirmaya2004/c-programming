@@ -11,7 +11,7 @@ int main()
         n=n/10;
 
     }
-    printf("the reverse of the number %d is %d",n,r);
+    printf("the reverse of the number %d is %d",n1,r);
     if(n1==r)
         printf("\n%d is a palindromic sequence",n1);
     else
