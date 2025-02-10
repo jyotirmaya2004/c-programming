@@ -1,6 +1,7 @@
 // Jyoitrmaya Behera=J.B.
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 int main()
 {
     char a[50],c[50];
@@ -15,7 +16,7 @@ int main()
             c[j]='\0';
             if(a[i]=='\0')
             {
-                printf("%c.%c.",a[0],c[0]);
+                printf("%c.%c.",toupper(a[0]),toupper(c[0]));
             }
             j=0;
             }
