@@ -10,12 +10,5 @@ int main()
     {
         putc(ch,fileptr);
     }
-    // while(1)
-    // {
-    //     if((ch=fgetc(fileptr))!=EOF)
-    //         printf("%c",ch);
-    //     else
-    //         break;
-    // }
     fclose(fileptr);
 }

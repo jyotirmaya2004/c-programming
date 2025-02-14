@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    FILE *fp = fopen("file1.txt", "r");
+    FILE *fp = fopen("file.txt", "r");
     if (!fp) {
         perror("Error opening file");
         return 1;
@@ -12,6 +12,7 @@ int main() {
     char ch;
 
     while ((ch = fgetc(fp)) != EOF) {
+        printf("%c\n",ch);
         if (ch == ' ' || ch == '\n') {
             in_word = 0;
         } else if (!in_word) {
