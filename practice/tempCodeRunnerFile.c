@@ -2,10 +2,8 @@
 #include<ctype.h>
 
 int main() {
-    int a;
-    for (;;)
-    {
-        printf("Yes");
-    }
+    int a=13;
+    
+    printf("%d");
     
 }
