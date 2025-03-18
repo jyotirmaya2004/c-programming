@@ -18,12 +18,6 @@ int main() {
         printf("Price of %s : ", a[i]);
         scanf("%f",&b[i]);
     }                
-
-    printf("Now Enter product price :\n");
-    for (int i = 0; i < n; i++) {
-        printf("Price of %s : ", a[i]);
-        scanf("%f",&b[i]);
-    }
     printf("\t\t* * * LIST OF ITEMS * * *\n");
     printf("\t\t ITEM\t\t   PRICE\n");
     for (int i = 0; i < n; i++) {

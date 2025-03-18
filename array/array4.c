@@ -1,4 +1,4 @@
-/*find number elem,ent in a array*/
+/*find number element in a array*/
 #include<stdio.h>
 int main()
 {
